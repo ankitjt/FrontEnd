@@ -1,0 +1,43 @@
+.admin-pages {
+    height: 100%;
+    .top-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #6C63FF;
+        padding: 20px;
+        font-size: 14px;
+        color: #fff;
+        .user-profile {
+            display: flex;
+            .notifications {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .second-navbar {
+        display: flex;
+        margin: 20px 0;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        a {
+            text-decoration: none;
+            color: #525252;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            background-color: #eeeeee;
+            padding: 7px;
+            border-radius: 4px;
+            margin: 10px;
+            font-weight: bold;
+            outline: none;
+            svg {
+                margin-left: 8px;
+            }
+        }
+    }
+}
