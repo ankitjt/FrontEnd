@@ -125,7 +125,7 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   padding: 20px;
   font-size: 14px;
   color: #fff;
@@ -146,9 +146,9 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   margin: 20px 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
