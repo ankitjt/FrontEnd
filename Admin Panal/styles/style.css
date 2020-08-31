@@ -1,3 +1,7 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .index-page-wrapper {
   height: 100vh;
   width: 100%;
@@ -105,5 +109,144 @@
 
 .index-page-wrapper .login-form .forgot-pass strong {
   font-size: 12px;
+}
+
+.admin-pages {
+  height: 100%;
+}
+
+.admin-pages .top-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #6C63FF;
+  padding: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.admin-pages .top-navbar .user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin-pages .top-navbar .user-profile .notifications {
+  margin-right: 20px;
+}
+
+.admin-pages .second-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin-pages .second-navbar a {
+  text-decoration: none;
+  color: #525252;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eeeeee;
+  padding: 7px;
+  border-radius: 4px;
+  margin: 10px;
+  font-weight: bold;
+  outline: none;
+}
+
+.admin-pages .second-navbar a svg {
+  margin-left: 8px;
+}
+
+.admin-page-wrapper .admin-summary {
+  margin-top: 20px;
+}
+
+.admin-page-wrapper .admin-summary .admin-summary-pills {
+  -webkit-box-shadow: 2px 2px 20px #e1e1e1;
+          box-shadow: 2px 2px 20px #e1e1e1;
+  padding: 10px 20px;
+  border-radius: 4px;
+  height: auto;
+  margin: 40px 0;
+}
+
+.admin-page-wrapper .admin-summary .admin-summary-pills .table-name {
+  color: #6C63FF;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.admin-page-wrapper .admin-summary .issue-count-wrapper .issue-count {
+  margin: 10px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+}
+
+.admin-page-wrapper .admin-summary .issue-count-wrapper .issue-count .counters {
+  background-color: #6C63FF;
+  height: 70px;
+  width: 150px;
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 3px;
+}
+
+.admin-page-wrapper .admin-summary .issue-count-wrapper .issue-count .counters .counter-title {
+  color: #fff;
+  font-size: 12px;
+}
+
+.admin-page-wrapper .admin-summary .issue-count-wrapper .issue-count .counters .count {
+  color: #fff;
+  font-size: 21px;
+}
+
+.admin-page-wrapper .admin-summary .attendance-count-wrapper table {
+  font-size: 14px;
+  color: #525252;
 }
 /*# sourceMappingURL=style.css.map */
