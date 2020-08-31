@@ -1,0 +1,109 @@
+.index-page-wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: #525252;
+}
+
+.index-page-wrapper img {
+  height: 200px;
+  width: 200px;
+}
+
+.index-page-wrapper .login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-page-wrapper .login-form .login-inputs {
+  margin: 30px 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 20px #e6e6e6;
+          box-shadow: 2px 2px 20px #e6e6e6;
+  padding: 40px 70px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.index-page-wrapper .login-form .login-inputs input {
+  padding: 6px 0;
+  margin: 18px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #525252;
+  font-size: 14px;
+  font-family: inherit;
+  color: #525252;
+  font-weight: bolder;
+}
+
+.index-page-wrapper .login-form .login-inputs .login-btn {
+  background-color: #6C63FF;
+  border: none;
+  color: #ffffff;
+  font-family: inherit;
+  border-radius: 4px;
+  width: auto;
+  padding: 6px 18px;
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.index-page-wrapper .login-form .forgot-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  width: 80%;
+  padding: 0 30px;
+}
+
+.index-page-wrapper .login-form .forgot-pass a {
+  text-decoration: none;
+  color: orangered;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.index-page-wrapper .login-form .forgot-pass strong {
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
