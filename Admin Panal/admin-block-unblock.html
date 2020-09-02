@@ -12,7 +12,7 @@
     <title>Create User - Admin Panal</title>
   </head>
   <body>
-      <div class="admin-create-user-wrapper admin-pages">
+      <div class="admin-block-unblock-wrapper admin-pages">
         <div class="top-navbar container-fluid">
             <div class="app-name">
                 <span>Admin Panal</span>
@@ -87,38 +87,27 @@
             </a>
         </div>
         <div class="container">
-            <div class="pills create-user-wrapper">
+            <div class="pills block-unblock-wrapper">
                 <span class="table-name">
-                    New User
+                    Block/Unblock User
                 </span>
                 <form action="" class="create-user-form">
                     <form>
-                    
                         <select class="browser-default custom-select mt-3 mb-0 input-boxes" id="select">
-                            <option value="User Type" disabled="" selected="">User Type</option>
-                            <option value="Moderator">Moderator</option>
-                            <option value="Team Member">Team Member</option>
+                            <option value="User Type" disabled="" selected="">Select Action</option>
+                            <option value="Moderator">Block</option>
+                            <option value="Team Member">Unblock</option>
                         </select>
                     
-                        <input type="text" id="defaultRegisterFormFirstName" class="form-control mt-3 mb-3 input-boxes" placeholder="First name">
-                    
-                        <input type="text" id="defaultRegisterFormLastName" class="form-control mt-3 mb-3 input-boxes" placeholder="Last name">
-                    
                         <input type="email" id="defaultRegisterFormEmail" class="form-control mt-3 mb-3 input-boxes" placeholder="E-mail">
-                    
-                        <input type="password" id="defaultRegisterFormPassword" class="form-control mt-3 mb-3 input-boxes" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" disabled>
-                    
-                        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-3">Default password 'Admin123$'</small>
-                    
-                        <input type="text" id="defaultRegisterPhonePassword" class="form-control mt-2 mb-2 input-boxes" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-                    
-                        <input class="custom-buttons" type="submit" value="Create User" />
+
+                        <textarea id="textarea" class="form-control mt-3 mb-3" placeholder="Reason for Block/Unblock"></textarea>
+                        <input class="custom-buttons" type="submit" value="Update Profile" />
 
                     </form>
                 </form>
             </div>
         </div>
-        
       </div>
-  </body>
+    </body>
 </html>
