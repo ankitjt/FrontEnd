@@ -2,52 +2,6 @@
     .admin-summary {
         margin-top: 20px;
 
-        .admin-summary-pills {
-            box-shadow: 2px 2px 20px #e1e1e1;
-            padding: 10px 20px;
-            border-radius: 4px;
-            height: auto;
-            margin: 40px 0;
-            .table-name {
-                color: #6C63FF;
-                display: inline-block;
-                margin: 10px 0;
-                font-size: 14px;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-        }
-        
-        .issue-count-wrapper {
-            .issue-count {
-                margin: 10px 0;
-                padding: 0;
-                display: flex;
-                justify-content: space-between;
-                font-family: 'Raleway', sans-serif;
-                .counters {
-                    background-color: #6C63FF;
-                    height: 70px;
-                    width: 150px;
-                    margin: 0 5px;
-                    display: flex;
-                    padding: 10px;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    border-radius: 3px;
-                    .counter-title {
-                        color: #fff;
-                        font-size: 12px;
-                    }
-                    .count {
-                        color: #fff;
-                        font-size: 21px;
-                    }
-                }
-            }
-        }
-
         .attendance-count-wrapper {
             table {
                 font-size: 14px;
