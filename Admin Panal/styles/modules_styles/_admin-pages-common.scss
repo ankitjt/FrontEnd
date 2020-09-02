@@ -1,5 +1,5 @@
 .custom-buttons {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   border: none;
   color: #ffffff;
   font-family: inherit;
@@ -9,7 +9,7 @@
   text-transform: capitalize;
   font-size: 14px;
   letter-spacing: 1px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   margin: 20px 0;
   outline: none;
@@ -22,7 +22,7 @@
   outline: none !important;
   border: none;
   background-color: transparent;
-  border-bottom: 2px solid #6C63FF;
+  border-bottom: 2px solid #6c63ff;
   font-size: 14px;
   font-family: inherit;
   color: #525252;
@@ -31,71 +31,70 @@
 }
 
 .admin-pages {
-    height: 100%;
-    .top-navbar {
+  height: 100%;
+  .top-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6c63ff;
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+    .user-profile {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #6c63ff;
-      padding: 20px;
-      font-size: 14px;
-      color: #fff;
-      .user-profile {
-        display: flex;
-        .notifications {
-          margin-right: 20px;
-        }
-      }
-    }
-  
-    .second-navbar {
-      display: flex;
-      margin: 20px 0;
-      justify-content: center;
-      align-items: center;
-      padding: 0 10px;
-      flex-wrap: wrap;
-      a {
-        text-decoration: none;
-        color: #525252;
-        font-size: 11px;
-        display: flex;
-        align-items: center;
-        background-color: #eeeeee;
-        padding: 7px;
-        border-radius: 4px;
-        margin: 10px;
-        font-weight: bold;
-        outline: none;
-        svg {
-          margin-left: 8px;
-        }
+      .notifications {
+        margin-right: 20px;
       }
     }
   }
 
-  .pills {
-    box-shadow: 2px 2px 20px #e1e1e1;
-    padding: 10px 20px;
-    border-radius: 8px;
-    height: auto;
-    margin: 40px 0;
-    .table-name {
-        color: #6C63FF;
-        display: inline-block;
-        margin: 10px 0;
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: bold;
+  .second-navbar {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: #525252;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      background-color: #eeeeee;
+      padding: 7px;
+      border-radius: 4px;
+      margin: 10px;
+      font-weight: bold;
+      outline: none;
+      svg {
+        margin-left: 8px;
+      }
     }
+  }
+}
+
+.pills {
+  box-shadow: 2px 2px 20px #e1e1e1;
+  padding: 10px 20px;
+  border-radius: 8px;
+  height: auto;
+  margin: 40px 0;
+  .table-name {
+    color: #6c63ff;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
 .pills-issue-count {
- 
   margin: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   .comm-type-wrapper {
     background-color: #e1e1e1;
     margin: 5px 0;
@@ -109,26 +108,27 @@
     font-size: 12px;
   }
   .counter-in-wrapper {
-    display:flex;
+    display: flex;
+    justify-content: center;
   }
   .counters {
-      background-color: #6C63FF;
-      height: 70px;
-      width: 150px;
-      margin: 0 5px;
-      display: flex;
-      padding: 10px;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      border-radius: 3px;
-      .counter-title {
-          color: #fff;
-          font-size: 12px;
-      }
-      .count {
-          color: #fff;
-          font-size: 21px;
-      }
+    background-color: #6c63ff;
+    height: 70px;
+    width: 150px;
+    margin: 0 5px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px;
+    .counter-title {
+      color: #fff;
+      font-size: 12px;
+    }
+    .count {
+      color: #fff;
+      font-size: 21px;
+    }
   }
 }

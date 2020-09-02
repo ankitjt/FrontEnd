@@ -5,7 +5,7 @@ html, body {
 }
 
 .custom-buttons {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   border: none;
   color: #ffffff;
   font-family: inherit;
@@ -15,7 +15,7 @@ html, body {
   text-transform: capitalize;
   font-size: 14px;
   letter-spacing: 1px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   margin: 20px 0;
   outline: none;
@@ -28,7 +28,7 @@ html, body {
   outline: none !important;
   border: none;
   background-color: transparent;
-  border-bottom: 2px solid #6C63FF;
+  border-bottom: 2px solid #6c63ff;
   font-size: 14px;
   font-family: inherit;
   color: #525252;
@@ -114,7 +114,7 @@ html, body {
 }
 
 .pills .table-name {
-  color: #6C63FF;
+  color: #6c63ff;
   display: inline-block;
   margin: 10px 0;
   font-size: 12px;
@@ -134,7 +134,7 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .pills-issue-count .comm-type-wrapper {
@@ -155,10 +155,13 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pills-issue-count .counters {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   height: 70px;
   width: 150px;
   margin: 0 5px;
@@ -276,25 +279,5 @@ html, body {
 .admin-page-wrapper .admin-summary .attendance-count-wrapper table {
   font-size: 14px;
   color: #525252;
-}
-
-.upload-document-notes {
-  list-style-type: none;
-  padding: 10px 0;
-  background-color: #f1f3f8;
-  border-radius: 6px;
-  width: 100%;
-  color: #ff7171;
-  font-weight: bold;
-}
-
-.upload-document-notes li {
-  padding: 0 20px;
-  width: 100%;
-  text-align: justify;
-}
-
-.uploaded-document-table svg {
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
