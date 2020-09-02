@@ -1,8 +1,10 @@
 html,body {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box !important;
 }
 
-@import '../styles/modules_styles/index-page';
 @import '../styles/modules_styles/admin-pages-common';
+@import '../styles/modules_styles/index-page';
 @import '../styles/modules_styles/admin-page';
-// @import '../styles/module_styles/admin-create-user';
+@import '../styles/modules_styles/admin-create-user';
+@import '../styles/modules_styles/admin-documentation';
