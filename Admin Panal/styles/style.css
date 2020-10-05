@@ -5,9 +5,9 @@ html, body {
 }
 
 .custom-buttons {
-  background-color: #6c63ff;
+  background-color: #6C63FF;
   border: none;
-  color: #ffffff;
+  color: #eee;
   font-family: inherit;
   border-radius: 4px;
   width: auto;
@@ -15,8 +15,8 @@ html, body {
   text-transform: capitalize;
   font-size: 14px;
   letter-spacing: 1px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   margin: 20px 0;
   outline: none;
 }
@@ -25,10 +25,10 @@ html, body {
   padding: 6px 0;
   margin: 18px 0;
   width: 100%;
-  outline: none !important;
+  outline: transparent !important;
   border: none;
   background-color: transparent;
-  border-bottom: 2px solid #6c63ff;
+  border-bottom: 2px solid #6C63FF;
   font-size: 14px;
   font-family: inherit;
   color: #525252;
@@ -70,21 +70,17 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
+  padding: 5px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .admin-pages .second-navbar a {
   text-decoration: none;
-  color: #525252;
+  color: #fff;
   font-size: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,11 +88,13 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eeeeee;
+  background-color: #6c63ff;
   padding: 7px;
   border-radius: 4px;
   margin: 10px;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
   outline: none;
 }
 
@@ -114,12 +112,13 @@ html, body {
 }
 
 .pills .table-name {
-  color: #6c63ff;
+  color: #6C63FF;
   display: inline-block;
-  margin: 10px 0;
+  margin: 0;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 10px 20px 0 20px;
 }
 
 .pills-issue-count {
@@ -127,41 +126,45 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .pills-issue-count .comm-type-wrapper {
-  background-color: #e1e1e1;
   margin: 5px 0;
-  padding: 15px;
+  padding: 15px 0;
   border-radius: 5px;
 }
 
 .pills-issue-count .issue-category {
-  color: #111111 !important;
+  color: #212121 !important;
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 12px;
+  text-align: center;
 }
 
 .pills-issue-count .counter-in-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .pills-issue-count .counters {
-  background-color: #6c63ff;
+  background-color: #6C63FF;
   height: 70px;
   width: 150px;
   margin: 0 5px;
@@ -190,6 +193,39 @@ html, body {
 .pills-issue-count .counters .count {
   color: #fff;
   font-size: 21px;
+}
+
+.create-user-form {
+  padding: 0 20px;
+}
+
+.form-field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.form-field-wrapper .mandatory {
+  color: orangered;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 820px) {
+  .second-navbar {
+    -webkit-box-pack: initial !important;
+        -ms-flex-pack: initial !important;
+            justify-content: initial !important;
+  }
 }
 
 .index-page-wrapper {
@@ -279,5 +315,25 @@ html, body {
 .admin-page-wrapper .admin-summary .attendance-count-wrapper table {
   font-size: 14px;
   color: #525252;
+}
+
+.upload-document-notes {
+  list-style-type: none;
+  padding: 10px 0;
+  background-color: #f1f3f8;
+  border-radius: 6px;
+  width: 100%;
+  color: #ff7171;
+  font-weight: bold;
+}
+
+.upload-document-notes li {
+  padding: 0 20px;
+  width: 100%;
+  text-align: justify;
+}
+
+.uploaded-document-table svg {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
