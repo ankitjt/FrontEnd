@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.wrapper {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #363636;
+    .pages {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .page-1 {
+        
+        
+        .overlay-1 {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            background-color: #132743;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            animation-name: frame-1;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            z-index: 1;
+            @keyframes frame-1 {
+                0% {
+                    top: -100%;
+                }
+                25% {
+                    top: 0%;
+                }
+                50% {
+                    top: 0%;
+                }
+                75% {
+                    top: 100%;
+                }
+                100% {
+                    top: 200%;
+                }
+            }
+            p {
+                text-align: justify;
+                margin: 0 300px;
+                
+            }
+        }
+        .frame {
+            height: 80%;
+            width: 80%;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            
+            .page1-links {
+                text-align: center;
+                padding-top: 40px;
+                .logo {
+                    font-size: 70px;
+                    font-style: italic;
+                    color: #132743;
+                    text-transform: none;
+                    .logo-short {
+                        font-size: 24px;
+                        font-style: normal;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: #525252;
+                    margin: 0 30px;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: bolder;
+                    vertical-align: middle;
+                    letter-spacing: 2px;
+                }
+            }
+            .holder {
+                margin-top: 200px;
+                text-align: center;
+               
+                .more-button {
+                    padding: 18px 54px;
+                    background: #212121;
+                    outline: none;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    border: transparent;
+                    position: relative;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    overflow: hidden;
+                    z-index: 0;
+                    cursor: pointer;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translateX(-100%);
+                        width: 100%;
+                        background-color: #132743;
+                        height: 100%;
+                        animation-name: button-animate;
+                        animation-duration: 500ms;
+                        animation-delay: 4s;
+                        animation-fill-mode: forwards;
+                        animation-timing-function: ease-out;
+                        will-change: transform;
+                    }
+                    
+                    @keyframes button-animate {
+                        0% {
+                            transform: translateX(0%);
+                        }
+                       100% {
+                        transform: translateX(100%);
+                        }
+                    }
+                }
+                
+            }
+
+            .next-div {
+                margin-top: 100px;
+                text-align: center;
+                margin: 100px 150px 0 150px;
+                p {
+                    background-color: #212121;
+                    padding: 30px;
+                    position: relative;
+                    overflow: hidden;
+                    color: #fff;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        transform: translateY(200%);
+                        width: 100%;
+                        background-color: #132743;
+                        height: 100%;
+                        animation-name: p-animate;
+                        animation-duration: 1s;
+                        animation-delay: 4s;
+                        animation-fill-mode: forwards;
+                        animation-timing-function: ease-out;
+                        transition: all .3s;
+                        will-change: transform;
+                    }
+                    
+                    @keyframes p-animate {
+                        0% {
+                            transform: translateY(100%);
+                        }
+                       100% {
+                        transform: translateY(-100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-2 {
+       
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .frame-2 {
+                height: 80%;
+                width: 80%;
+                background-color: #fff;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                p {
+                    margin: 0 120px;
+                }
+                .fallen-divs-wrapper {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px;
+                    display: flex;
+                    overflow: hidden;
+                    .fallen-divs {
+                        height: 100%;
+                        width: 16.666%;
+                        background-color: #212121;
+                        margin: 0 10px;
+                    }
+                    .goingdown {
+                        animation-name: goingdown;
+                        animation-duration: 3s;
+                        animation-delay: 6s;
+                        transform: translateY(-200%);
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes goingdown {
+                            0% {
+                                transform: translateY(-100%);
+                            }
+                            100% {
+                                transform: translateY(200%);
+                            }
+                        }
+                    }
+                    .goingup {
+                        animation-name: goingup;
+                        animation-duration: 3s;
+                        animation-delay: 6s;
+                        transform: translateY(200%);
+                        animation-timing-function: ease-in-out;
+
+                        @keyframes goingup {
+                            0% {
+                                transform: translateY(100%);
+                            }
+                            100% {
+                                transform: translateY(-200%);
+                            }
+
+                        }
+                    }
+                }
+                
+            }
+    }
+
+    .page-3 {
+        .frame-3 {
+            height: 80%;
+            width: 80%;
+            background-color: #111;
+            position: relative;
+            overflow: hidden;
+            .menu-icon {
+                color: #212121;
+                display: inline-block;
+                padding: 30px;
+                cursor: pointer;
+                position: absolute;
+                z-index: 1;
+            }
+            .menu-wrapper {
+                width: 100%;
+                height: 100%;
+                background-color: #f9f9f9;
+                position: relative;
+                .menu-pills {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                    .foroverlay {
+                        background: #2C3E50;  /* fallback for old browsers */
+                        background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+                        background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, 
+                        IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        z-index: 2;
+                        transform: translateX(-100%);
+                    }
+                    
+                    .menu-links {
+                        background-color: #fff;
+                        z-index: 0;
+                        display: flex;
+                        .img-holder {
+                            background-image: url("/Animations/bird-image.jpg");
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            width: 50%;
+                            height: 100%;
+                        }
+                        .menubar-links {
+                            padding-top: 70px;
+                            width : 50%;
+                            display: inline-block;
+                            text-align: center;
+                            a {
+                                text-decoration: none;
+                                color: #363636;
+                                margin: 0 10px;
+                            }
+                        }
+                    }
+
+            }
+        }
+    }
+}
