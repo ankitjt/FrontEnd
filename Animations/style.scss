@@ -509,3 +509,186 @@ html {
         transform: translateX(0) translateY(-100%);
     }
 }
+
+.page-5 {
+    .frame-5 {
+        height: 80%;
+        width: 80%;
+        background-color: #f9f9f9;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .first-row {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            p {
+                font-size: 11px;
+                font-weight: bold;
+                text-align: center;
+                color: #525252;
+            }
+            .menu-dropdown {
+                font-weight: bolder;
+                cursor: pointer;
+            }
+            .search {
+                color: #FD746C;
+                transform: rotate(-45deg);
+                cursor: pointer;
+            }
+        }
+        .second-row {
+            display: flex;
+            background: #f1f1f1;
+            height: calc(100% - 50px);
+            .boxes {
+                height: 100%;
+                width: 33.33%;
+            }
+
+            .left-content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                overflow: hidden;
+                    a {
+                        text-decoration: none;
+                        color: #525252;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        font-weight: bolder;
+                        letter-spacing: 3px;
+                        margin: 0;
+                        font-style: italic;
+                        transform: translateX(-100%);
+                        position: relative;
+                        transition: 0.5s ease;
+
+                        &:hover {
+                            color: #FD746C;
+                        }
+                        .first-letter-large {
+                            font-size: 45px;
+                            
+                        }
+                        &:nth-child(1) {
+                            animation-name: slide-1;
+                            animation-duration: 1s;
+                            animation-delay: 0.5s;
+                            animation-fill-mode: forwards;
+
+                            @keyframes slide-1 {
+                                100% {
+                                    transform: translateX(80%);
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            animation-name: slide-2;
+                            animation-duration: 1s;
+                            animation-delay: 1s;
+                            animation-fill-mode: forwards;
+
+                            @keyframes slide-2 {
+                                100% {
+                                    transform: translateX(70%);
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            animation-name: slide-3;
+                            animation-duration: 1s;
+                            animation-delay: 1.5s;
+                            animation-fill-mode: forwards;
+
+                            @keyframes slide-3 {
+                                100% {
+                                    transform: translateX(60%);
+                                }
+                            }
+                        }
+                        &:nth-child(4) {
+                            animation-name: slide-4;
+                            animation-duration: 1s;
+                            animation-delay: 2s;
+                            animation-fill-mode: forwards;
+
+                            @keyframes slide-4 {
+                                100% {
+                                    transform: translateX(50%);
+                                }
+                            }
+                        }
+                }
+            }
+            .center-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .sphere {
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+                    background-color: #FD746C;
+                    box-shadow: 6px 6px 20px #111;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    animation-name: sphere-inflate;
+                    animation-duration: 3s;
+                    animation-delay: 0.2s;
+                    @keyframes sphere-inflate {
+                        50% {
+                            transform: scale(1.2);
+                        }
+                        90% {
+                            transform: scale(0.9);
+                        }
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+            .right-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .right-content-wrapper {
+                    padding: 0 40px;
+                    p {
+                        
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #525252;
+                        line-height: 30px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #525252;
+                        text-transform: uppercase;
+                        font-size: 10px;
+                        font-weight: bolder;
+                        letter-spacing: 1px;
+                        margin: 0 5px 0 0;
+                        display: inline-block;
+                        font-style: italic;
+                        position: relative;
+                        transition: 0.5s ease;
+                        text-align: left;
+                        transition: 0.5s ease;
+                        &:hover {
+                            color: #FD746C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
